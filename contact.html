@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Kairox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button id="theme-toggle" class="theme-toggle-btn">🌙 Dark Mode</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content-box">
+            <h1>Get In Touch</h1>
+            <p>Send me a message directly to my email using the form below!</p>
+
+            <form action="https://api.web3forms.com/submit" method="POST" style="margin-top: 20px;">
+                <!-- Web3Forms Access Key -->
+                <input type="hidden" name="access_key" value="46455953-756d-4d4f-a196-a5abf6620c9f">
+
+                <div style="margin-bottom: 15px;">
+                    <label for="name" style="display: block; font-weight: bold; margin-bottom: 5px;">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="John Doe" required
+                        style="width: 100%; padding: 12px; border-radius: 10px; border: 1px solid var(--card-border); background: rgba(15, 23, 42, 0.5); color: var(--text-primary);">
+                </div>
+
+                <div style="margin-bottom: 15px;">
+                    <label for="email" style="display: block; font-weight: bold; margin-bottom: 5px;">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="john@example.com" required
+                        style="width: 100%; padding: 12px; border-radius: 10px; border: 1px solid var(--card-border); background: rgba(15, 23, 42, 0.5); color: var(--text-primary);">
+                </div>
+
+                <div style="margin-bottom: 15px;">
+                    <label for="message" style="display: block; font-weight: bold; margin-bottom: 5px;">Your Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required
+                        style="width: 100%; padding: 12px; border-radius: 10px; border: 1px solid var(--card-border); background: rgba(15, 23, 42, 0.5); color: var(--text-primary);"></textarea>
+                </div>
+
+                <button type="submit" class="cta-btn" style="cursor: pointer; border: none;">Send Message 🚀</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
