@@ -1,0 +1,9 @@
+{
+    "owner": {
+        "username": "your-github-username",
+        "email": "your-email-address@example.com"
+    },
+    "records": {
+        "TXT": "vc-domain-verify=kairox.is.a.dev,489e3231284c3332c6e8"
+    }
+}
